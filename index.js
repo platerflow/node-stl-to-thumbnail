@@ -142,7 +142,7 @@ StlThumbnailer.prototype.processThumbnail = function(thumbnailSpec){
 
             // Configure renderer
             renderer.setSize(width, height, false)
-            renderer.setClearColor( 0xffffff, 1 );
+            renderer.setClearColor( thumbnailSpec.backgroundColor, 1 );
 
             // Configure camera with user-set position, then move it in-or-out depending on
             // the size of the model that needs to display
